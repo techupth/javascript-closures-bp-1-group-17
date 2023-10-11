@@ -5,8 +5,8 @@
 function removeDuplicates(array) {
   let uniqueArray = [];
   for (let i = 0; i < array.length - 1; i++) {
-    if (uniqueArray.indexOf(array[i]) === 1) {
-      uniqueArray.push(array[0]);
+    if (uniqueArray.indexOf(array[i]) === -1) {
+      uniqueArray.push(array[i]);
     }
   }
   return uniqueArray;
